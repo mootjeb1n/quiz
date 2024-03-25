@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .image-container {
+    text-align: center;
+  }
+  .image-container img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .welcome-container {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image-container">
+    <a href="wc.html"><img src="wc.jpg" alt="Foto 1"></a>
+    <button onclick="window.location.href='wc.html';">Quiz Starten</button>
+  </div>
+  <div class="image-container">
+    <a href="cl.html"><img src="cl.jpg" alt="Foto 2"></a>
+    <button onclick="window.location.href='cl.html';">Quiz Starten</button>
+  </div>
+</div>
+<div class="welcome-container">
+  <h3>WELKOM OP DE VOETBAL QUIZ</h3>
+  <p>Links voor de WK Quiz en rechts voor de Champions League Quiz</p>
+</div>
+</body>
+</html>

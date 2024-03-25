@@ -49,7 +49,6 @@ function displayQuestion() {
   }
 }
 
-
 function checkAnswer(selectedOption) {
   const userAnswer = selectedOption;
   const correctAnswer = questions[currentQuestion].correctAnswer;
@@ -66,7 +65,7 @@ function checkAnswer(selectedOption) {
 
 function displayResult(isCorrect, explanation) {
   const resultContainer = document.querySelector('.result-container');
-  const resultMessage = isCorrect ? 'Goed antwoord!' : `Fout antwoord. Het juiste antwoord is ${correctAnswer}. ${explanation}`;
+  const resultMessage = isCorrect ? 'Goed antwoord!' : `Fout antwoord. Het juiste antwoord is ${questions[currentQuestion].correctAnswer}. ${explanation}`;
 
   resultContainer.textContent = resultMessage;
 
@@ -78,7 +77,7 @@ function displayResult(isCorrect, explanation) {
     } else {
       displayEndScore();
     }
-  }, 1000);
+  }, isCorrect ? 0 : 5000);
 }
 
 function checkOpenAnswer() {

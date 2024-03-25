@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #050099;
+  color: white;
+}
+
+header {
+  background-color: #050099;
+  padding: 20px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo img {
+  max-width: 70px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 130px; /* Aangepast voor de gewenste afstand vanaf het logo */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #050099;
+}
+
+
+
+.question-container {
+  text-align: center;
+  margin-top: 50px;
+  
+}
+
+.question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+  top: 150px;
+}
+
+.answer {
+  width: calc(50% - 5px);
+  height: 100px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.answer:hover {
+  background-color: #c0c0c0;
+}
+#score {
+  position: absolute;
+  top: 400px;
+  right: 875px;
+  font-size: 50px;
+  color: #555;
+}
+input[type="text"] {
+  width: 300px; 
+  height: 40px; 
+  font-size: 16px;
+  padding: 10px; 
+}
+
+button {
+  width: 310px; 
+  height: 64px; 
+  font-size: 16px;
+  padding: 10; 
+}
+
+
+.checkmark {
+  background-image: url('checkmark.png'); 
+}
+
+.crossmark {
+  background-image: url('crossmark.png'); 
+}
+
+.result-container {
+  margin-top: 150px; 
+  text-align: center; 
+}
+#end-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#end-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#end-section p {
+  margin-bottom: 5px;
+}
+
+#end-section button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #050099;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#end-section button:hover {
+  background-color: #050099;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.question-container {
+  text-align: center;
+  margin-top: 50px;
+  
+}
+
+.answer {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.result-container {
+  margin-top: 10px;
+}
+
+.checkmark, .crossmark {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-top: 200px;
+  margin-left: 935px;
+ 
+}
+
+.checkmark {
+  background-color: green;
+}
+
+.crossmark {
+  background-color: red;
+}
+
+.end-section {
+  margin-top: 20px;
+}
+

@@ -77,7 +77,7 @@ function displayResult(isCorrect, explanation) {
     } else {
       displayEndScore();
     }
-  }, isCorrect ? 0 : 5000);
+  }, isCorrect ? 1000 : 5000);
 }
 
 function checkOpenAnswer() {
